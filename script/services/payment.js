@@ -5,7 +5,7 @@ var options = {
     "currency": "INR",
     "name": "Pizza Shop", //your business name
     "description": "Pizza Shope Transaction",
-    "image": "https://example.com/your_logo",
+    "image": "https://image.similarpng.com/very-thumbnail/2020/05/Pizza-logo-design-template-Vector-PNG.png",
     
     "handler": function (response){
         alert("Payment Done...");
