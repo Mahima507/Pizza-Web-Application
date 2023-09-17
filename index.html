@@ -8,14 +8,51 @@
     <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
     <script type="module" src="script/controller/pizza-controller.js"></script>
     <script defer src = "script/services/payment.js"></script>
-</head>
-<body>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://kit.fontawesome.com/38899bfea2.js" crossorigin="anonymous"></script>
+  </head>
+<body   background="https://static.tildacdn.com/tild3064-3464-4630-b030-626333616563/2__-__.svg"  >
     <div class="container"> 
      <header>
-       <h1  class="alert alert-danger text-center">
+       <h1  class="alert alert-primary text-center">
             Pizza App 
         </h1>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="basket"><i class="fa-solid fa-cart-shopping"></i></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"> VALUE COMBOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">BESTSELLERS</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      MENU
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+            
+          </nav>
      </header>
+
      <section>
         <div class="row">
             <div class="col-8" >
@@ -23,17 +60,19 @@
                    <!--Pizza will be here inside the column -->
                 </div>
             </div>
-
-
+              <!-- container for cart -->
             <div class="col-4" id="basket">
-                Basket will be Here
-                
+              <h2>Add To Cart</h2>
+               <!--     Basket will be Here        -->
             </div>
-            <button id="rzp-button1">Pay</button>
+           
+            <!-- Payment button -->
+            <button class="btn btn-outline-success" id="rzp-button1">Pay</button>
+            
         </div>
          <!-----------  Pizza Comes Here   ----------->
-       
         </section>
+
      <footer>
 
      </footer>
